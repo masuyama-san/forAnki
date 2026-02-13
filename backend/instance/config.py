@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 # Anki 設定
-ANKI_DECK_NAME = os.getenv("ANKI_DECK_NAME", "sample")
-ANKI_MODEL_NAME = os.getenv("ANKI_MODEL_NAME", "基本")
-ANKI_CONNECT_URL = os.getenv("ANKI_CONNECT_URL", "http://localhost:8765")
+ANKI_DECK_NAME = os.getenv("ANKI_DECK_NAME")
+ANKI_MODEL_NAME = os.getenv("ANKI_MODEL_NAME")
+ANKI_CONNECT_URL = os.getenv("ANKI_CONNECT_URL")
 
 # ファイル設定
 OUTPUT_DIR = os.getenv("OUTPUT_DIR", "export_sample")
